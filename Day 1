@@ -1,0 +1,23 @@
+Binarary representaiton
+  4 bits = 1 nibble
+  8 bits = 1 byte
+  16 bits = half word
+  32 bits = word
+
+Mac Address Types
+  Unicast: One to one
+    8th bit is off
+  Multicast: One to many 
+    8th bit is on
+  Broadcast: One to all
+    All bits on
+
+Ethernet Header and Frame
+  Ether type = 13 and 14th byte  Type of Traffic
+  0x0800                            IPV4
+  0x0806                            ARP
+  0x86DD                            IPV6
+  0x8100                          VLAN Tag
+
+Vlan = Makes a larger network into multiple smaller networks
+  Vlan tag adds 4 more bytes to ethernet header right before Ether type.
