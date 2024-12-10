@@ -1,0 +1,12 @@
+Traffic Capture    
+
+# Sniffing tools
+    2 types of packet sniffers
+		Hardware and Software packet sniffers
+	Scoket Types		
+		Stream socket -TCP
+		Daagram socket - UDP
+		RAW Sockets
+	2 types of sniffing
+		Active & passive
+	
