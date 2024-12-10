@@ -21,3 +21,5 @@ Ethernet Header and Frame
 
 Vlan = Makes a larger network into multiple smaller networks
   Vlan tag adds 4 more bytes to ethernet header right before Ether type.
+RARP Request opcode = 3
+RARP Response opcode = 4
