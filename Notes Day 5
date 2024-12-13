@@ -1,0 +1,113 @@
+Reconnaissance Stages
+    - Passive External
+    - Active External
+    - Passive Internal
+    - Active Internal
+
+  Blue Space = me or my network
+  Gray Space = The internet
+  Red Space = Targets network
+
+Reconnaissance Steps
+    - Network Footprinting
+    - Network Scanning
+    - Network Enumeration
+    - Vulnerability Assessment
+
+ Network Footprinting
+      Collect information relating to target
+      - Network
+      - Systems
+      - Organization
+
+Network Scanning
+    Port Scanning
+    Network Scanning
+    Vulnerability Scanning
+
+Network Enumeration
+    Network Resource and shares
+    Users and Groups
+    Routing tables
+    Auditing and Service settings
+    Machine names
+    Applications and banners
+    SNMP and DNS details
+    Other common services and ports
+
+Network Enumeration
+    Network Resource and shares
+    Users and Groups
+    Routing tables
+    Auditing and Service settings
+    Machine names
+    Applications and banners
+    SNMP and DNS details
+    Other common services and ports
+
+passive Recon Activities
+    IP Addresses and Sub-domains
+    Identifying External/3rd Party sites
+    Identifying People
+    Identifying Technologies
+    Identifying Content of Interest
+    Identifying Vulnerabilities
+
+Identifying External/3rd Party sites
+    Parent/Subordinate organizations
+    Clients/Customers
+    Service organizations
+    Partners
+
+Dig vs Whois
+    Whois - queries DNS registrar over TCP port 43
+        Information about the owner who registered the domain
+    Dig - queries DNS server over UDP port 53
+        Name to IP records
+        
+Zonetransfer over DNS TCP port 53
+
+Scanning Nature
+    Active
+    Passive
+    
+Scanning Strategy
+    Remote to Local
+    Local to Remote
+    Local to Local
+    Remote to Remote    
+
+   Scanning Approach
+    Aim
+        Wide range target scan
+        Target specific scan
+    Method
+        Single source scan
+            1-to-1 or 1-to-many
+        Distributed scan
+            many-to-one or many-to-many 
+            
+Port range is 20 - 23 and 80 for a horizontal scan
+
+Ping
+    Ping one IP:
+    ping 172.16.82.106 -c 1
+    Ping a range:
+    for i in {1..254}; do (ping -c 1 172.16.82.$i | grep "bytes from" &) ; done
+
+NMAP Defaults
+    Default Scan:
+        User: TCP Full Connect Scan (-sT)
+        Root: TCP SYN Scan (-sS)
+    Default Ports scanned: 1000 most commonly used TCP or UDP ports
+
+NMAP Port States
+    open
+    closed
+    filtered
+    unfiltered
+    open|filtered
+    closed|filtered
+
+
+
