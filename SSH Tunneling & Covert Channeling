@@ -1,0 +1,82 @@
+Tunneling is encapsulation
+  - Ipv6 transition (ipv6 over ipv4) 
+    - Requerires a Dual Stak Router
+Traffic Tunneling - Used mainly for IPv4 to IPv6 migration
+Tunneling Malware and Attacks
+  - Bypass IPv4-based secrity measures
+ISATAP = Mac Adress
+Covert Channels
+  - Common or legitamate protocols used in illegitimate ways. 
+Types of Covert Channels
+  - Storage
+    - Pyload 
+    - Header
+    - Timing
+  -Common Channels
+    - ICMP
+    - DNS
+    - HTTP
+Steganography
+  - Hiding messages inside legitimate information 
+    - Injection: putting it inside/adding stuff to something
+    - Substitution: Swapping something/small usually
+    - Propagtion: Building something new by combining the normal material with the malicious material from scratch
+
+
+SSH
+  - V1 & V2
+SSH Architecture
+      Client vs Server vs Session
+
+    Keys:
+
+        User Key - Asymmetric public key used to identify the user to the server
+
+        Host Key - Asymmetric public key used to identify the server to the user
+
+        Session Key - Symmetric key created by the client and server to protect the session’s communication
+SSH Port Forwarding
+  - Channel created with SSH-CONN protocol
+  - Allows tunneling of other services through SSH
+SSH Options
+    -L - Creates a port on the client mapped to a ip:port via the server
+
+    -D - Creates a port on the client and sets up a SOCKS4 proxy tunnel where the target ip:port is specified dynamically
+
+    -R - Creates the port on the server mapped to a ip:port via the client
+
+    -NT - Do not execute a remote command and disable pseudo-tty (will hang window)
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
