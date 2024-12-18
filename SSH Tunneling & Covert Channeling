@@ -46,6 +46,66 @@ SSH Options
     -R - Creates the port on the server mapped to a ip:port via the client
 
     -NT - Do not execute a remote command and disable pseudo-tty (will hang window)
+Local Port Forwarding
+ssh -p <optional alt port> <user>@<server ip> -L <local bind port>:<tgt ip>:<tgt port>
+
+or
+
+ssh -L <local bind port>:<tgt ip>:<tgt port> -p <alt port> <user>@<server ip>
+-p (is the port ssh is being run through if not using port 22 anymore/like a pivot port)
+Dynamic Port Forwarding
+  ssh <user>@<server ip> -p <alt port> -D <port>
+or
+  ssh -D <port> -p <alt port> <user>@<server ip>
+  - Proxychains default port 9050 - always use 9050
+
+SSH Dynamic Port Forwarding 1-Step
+Internet_Host:
+  ssh student@172.16.1.15 -D 9050
+  or
+  ssh -D 9050 student@172.16.1.15
+
+Remote Port Forwarding
+  ssh -p <optional alt port> <user>@<server ip> -R <remote bind port>:<tgt ip>:<tgt port>
+  or
+  ssh -R <remote bind port>:<tgt ip>:<tgt port> -p <alt port> <user>@<server ip>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
