@@ -1,0 +1,7 @@
+IH: telnet 11.1.1.11
+P1: ssh me@10.1.0.2 -r 1111:localhost:9999
+IH: ssh p1@localhost -p 9999 -L 1112:22.2.2.22:23 -NT
+IH: Telnet 22.2.2.22 1112
+P2: ssh p1@11.1.1.11 -p 9999 -r 1113:localhost:8888
+IH ssh p1@localhost -p 1112 -L 1114:localhost:1113
+IH ssh p2@localhost -p 1114 -L 1115:33.3.3.33:7777
